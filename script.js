@@ -41,3 +41,20 @@
       event.preventDefault();
       openPage("dashboard");
     });
+const passwordInput = document.getElementById("password-input");
+const passwordToggle = document.getElementById("password-toggle");
+
+if (passwordInput && passwordToggle) {
+  passwordToggle.addEventListener("click", () => {
+    const isPassword = passwordInput.type === "password";
+
+    passwordInput.type = isPassword ? "text" : "password";
+
+    passwordToggle.textContent = isPassword ? "Hide" : "Show";
+
+    passwordToggle.setAttribute(
+      "aria-label",
+      isPassword ? "Hide password" : "Show password"
+    );
+  });
+}

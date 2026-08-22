@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NoteFy</title>
+  <title>Note Shelf</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -12,8 +12,8 @@
   <section class="public-screen" id="home-screen">
     <header class="public-nav">
       <div class="public-brand">
-        <div class="logo">NF</div>
-        <span class="brand-name">NoteFy</span>
+        <div class="logo">NS</div>
+        <span class="brand-name">Note Shelf</span>
       </div>
       <nav class="public-links">
         <a href="#features">Features</a>
@@ -103,7 +103,7 @@
       <div class="hero-preview">
         <div class="preview-bar">
           <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
-          <span class="preview-bar-title">SecondBrain / Knowledge workspace</span>
+          <span class="preview-bar-title">Note Shelf / Knowledge workspace</span>
         </div>
         <div class="preview-grid">
           <aside class="preview-side">
@@ -172,7 +172,6 @@
 
         <div class="feature-grid">
 
-          <!-- Semantic Search -->
           <article class="feature feature-purple">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -191,8 +190,6 @@
             </p>
           </article>
 
-
-          <!-- Knowledge Graph -->
           <article class="feature feature-cyan">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -219,8 +216,6 @@
             </p>
           </article>
 
-
-          <!-- AI Chat -->
           <article class="feature feature-green">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -242,8 +237,6 @@
             </p>
           </article>
 
-
-          <!-- PDF Upload -->
           <article class="feature feature-purple">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -264,8 +257,6 @@
             </p>
           </article>
 
-
-          <!-- YouTube Learning -->
           <article class="feature feature-pink">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -284,8 +275,6 @@
             </p>
           </article>
 
-
-          <!-- Smart Notes -->
           <article class="feature feature-yellow">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -314,31 +303,96 @@
   </section>
 
   <section class="signin-screen hidden" id="signin-screen">
+
     <div class="signin-card">
-      <div class="public-brand">
-        <div class="logo">SB</div>
-        <span>SecondBrain</span>
+
+      <div class="signin-brand">
+        <div class="logo">NS</div>
+
+        <div>
+          <strong>Note Shelf</strong>
+          <span>Your AI knowledge workspace</span>
+        </div>
       </div>
-      <h1>Sign in to your second brain</h1>
-      <p>Use the demo credentials or continue with your account. This prototype opens the dashboard after sign in.</p>
+
+
+      <div class="signin-heading">
+        <span class="signin-label">WELCOME BACK</span>
+
+        <h1>Sign in to Note Shelf</h1>
+
+        <p>
+          Access your notes, documents, videos, and connected knowledge
+          from one intelligent workspace.
+        </p>
+      </div>
+
+
       <form class="form" id="signin-form">
-        <label class="field">Email<input type="email" value="rahul@example.com" /></label>
-        <label class="field">Password<input type="password" value="secondbrain" /></label>
-        <button class="primary" type="submit" style="height:48px">Sign in</button>
+
+        <label class="field">
+          Email
+
+          <input type="email" value="rahul@example.com" placeholder="you@example.com" autocomplete="email" />
+        </label>
+
+
+        <label class="field">
+          Password
+
+          <div class="password-field">
+
+            <input id="password-input" type="password" value="secondbrain" placeholder="Enter your password"
+              autocomplete="current-password" />
+
+            <button type="button" class="password-toggle" id="password-toggle" aria-label="Show password">
+              Show
+            </button>
+
+          </div>
+        </label>
+
+
+        <div class="signin-options">
+
+          <label class="remember">
+            <input type="checkbox" />
+            <span>Remember me</span>
+          </label>
+
+          <button type="button" class="forgot-password">
+            Forgot password?
+          </button>
+
+        </div>
+
+
+        <button class="primary signin-button" type="submit">
+          Sign in
+        </button>
+
       </form>
+
       <div class="signin-footer">
-        <button class="text-button" data-show-home>Back home</button>
-        <span>No account needed for demo</span>
+
+        <button class="text-button" data-show-home type="button">
+          ← Back home
+        </button>
+
+        <span>Demo mode • No account required</span>
+
       </div>
+
     </div>
+
   </section>
 
   <div class="app hidden" id="app-screen">
     <aside class="sidebar">
       <div class="brand">
-        <div class="logo">NF</div>
+        <div class="logo">NS</div>
         <div>
-          <strong>NoteFy</strong>
+          <strong>Note Shelf</strong>
           <span>Knowledge Graph</span>
         </div>
       </div>

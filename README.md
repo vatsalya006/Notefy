@@ -1,10 +1,10 @@
-#  Notefy
+#  Note Shelf
 
 AI-powered knowledge base with semantic search, RAG, and knowledge graph.
 
 ##  About
 
-Notefy is a full-stack web application that helps users organize and interact with their personal knowledge. Users can create notes, upload PDF documents, and save YouTube videos. The application processes this content and builds a searchable knowledge base powered by AI.
+Note Shelf is a full-stack web application that helps users organize and interact with their personal knowledge. Users can create notes, upload PDF documents, and save YouTube videos. The application processes this content and builds a searchable knowledge base powered by AI.
 
 Instead of acting as a general-purpose AI assistant, Notefy is designed to answer questions using only the user's own saved content, providing a personalized and context-aware experience.
 
