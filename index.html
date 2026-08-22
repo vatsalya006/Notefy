@@ -421,112 +421,823 @@
 
     <main class="main">
       <section class="page active" id="dashboard">
-        <div class="page-head">
+
+        <!-- ================= DASHBOARD HEADER ================= -->
+
+        <div class="new-dashboard-header">
+
           <div>
-            <h1>Good morning, Rahul</h1>
-            <p class="sub">Your second brain gained 18 connections this week.</p>
+            <h1>
+              Good morning, <span>Rahul</span> 👋
+            </h1>
+
+            <p>
+              Your second brain is growing. Keep connecting ideas.
+            </p>
           </div>
-          <button class="primary">+ New Note</button>
+
+          <div class="dashboard-header-actions">
+
+            <div class="dashboard-search-box">
+              <span>⌕</span>
+
+              <input type="text" placeholder="Search notes, topics, PDFs..." />
+
+              <kbd>Ctrl K</kbd>
+            </div>
+
+            <button class="dashboard-notification">
+              ♧
+            </button>
+
+            <div class="dashboard-user-avatar">
+              R
+            </div>
+
+            <button class="primary">
+              ✦ New Note
+            </button>
+
+          </div>
+
         </div>
 
-        <div class="grid dash-grid">
-          <div class="grid">
-            <div class="health-hero">
-              <strong>82%</strong>
-              <span>Knowledge health</span>
-              <div class="bar"><span style="width:82%"></span></div>
+
+        <!-- ================= TOP STAT CARDS ================= -->
+
+        <div class="dashboard-stat-grid">
+
+
+          <!-- Knowledge Health -->
+
+          <div class="dashboard-stat health-stat">
+
+            <div class="stat-title">
+              <span>Knowledge Health</span>
+              <small>i</small>
             </div>
-            <div class="metric-grid">
-              <div class="metric"><b>47</b><span>Total notes</span></div>
-              <div class="metric"><b>12</b><span>PDFs saved</span></div>
-              <div class="metric"><b>18</b><span>YouTube links</span></div>
-              <div class="metric"><b>6</b><span>Review due</span></div>
+
+            <div class="stat-number purple-number">
+              82%
             </div>
+
+            <div class="stat-status">
+              Excellent
+            </div>
+
+            <div class="stat-chart purple-chart">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
           </div>
 
-          <div class="panel pad mini-graph">
-            <div class="section-title">Knowledge Map Preview</div>
-            <svg viewBox="0 0 520 320" aria-label="Knowledge map preview">
-              <g stroke="#26263a" stroke-width="1.5">
-                <line x1="260" y1="150" x2="150" y2="82" />
-                <line x1="260" y1="150" x2="380" y2="80" />
-                <line x1="260" y1="150" x2="172" y2="238" />
-                <line x1="260" y1="150" x2="342" y2="252" />
-                <line x1="380" y1="80" x2="430" y2="188" />
-              </g>
-              <g font-size="13" font-weight="800" text-anchor="middle">
-                <circle cx="260" cy="150" r="42" fill="#7c3cff" opacity=".9" />
-                <text x="260" y="155" fill="#fff">System</text>
-                <circle cx="150" cy="82" r="28" fill="#12121d" stroke="#7c3cff" stroke-width="2" />
-                <text x="150" y="87" fill="#9b68ff">OS</text>
-                <circle cx="380" cy="80" r="31" fill="#12121d" stroke="#16c8e8" stroke-width="2" />
-                <text x="380" y="85" fill="#16c8e8">DBMS</text>
-                <circle cx="172" cy="238" r="25" fill="#12121d" stroke="#7c3cff" stroke-width="2" />
-                <text x="172" y="243" fill="#9b68ff">Load</text>
-                <circle cx="342" cy="252" r="23" fill="#12121d" stroke="#16c8e8" stroke-width="2" />
-                <text x="342" y="257" fill="#16c8e8">TCP</text>
-                <circle cx="430" cy="188" r="22" fill="#12121d" stroke="#ff4d5e" stroke-width="2" />
-                <text x="430" y="193" fill="#ff4d5e">CS50</text>
-              </g>
-            </svg>
+
+          <!-- Total Notes -->
+
+          <div class="dashboard-stat">
+
+            <div class="stat-icon blue-stat-icon">
+              ▤
+            </div>
+
+            <div class="stat-title">
+              <span>Total Notes</span>
+            </div>
+
+            <div class="stat-number">
+              47
+            </div>
+
+            <div class="stat-status">
+              +8 this week
+            </div>
+
+            <div class="stat-chart blue-chart">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
           </div>
 
-          <div class="panel pad">
-            <div class="section-title">AI Insights</div>
-            <div class="insight">
-              <div class="insight-item">
-                <h3>New connections found</h3>
-                <p>System Design now links strongly with DBMS notes and OS scheduling.</p>
-              </div>
-              <div class="insight-item">
-                <h3>Review due</h3>
-                <p>Normalization, process scheduling, and memory pointers need attention.</p>
-              </div>
-              <div class="insight-item">
-                <h3>Weak topic</h3>
-                <p>CAP theorem appears in notes but has no summary yet.</p>
-              </div>
+
+          <!-- PDFs -->
+
+          <div class="dashboard-stat">
+
+            <div class="stat-icon purple-stat-icon">
+              ▤
             </div>
+
+            <div class="stat-title">
+              <span>PDFs Saved</span>
+            </div>
+
+            <div class="stat-number">
+              12
+            </div>
+
+            <div class="stat-status">
+              +3 this week
+            </div>
+
+            <div class="stat-chart purple-chart">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
           </div>
+
+
+          <!-- YouTube -->
+
+          <div class="dashboard-stat">
+
+            <div class="stat-icon red-stat-icon">
+              ▶
+            </div>
+
+            <div class="stat-title">
+              <span>YouTube Links</span>
+            </div>
+
+            <div class="stat-number">
+              18
+            </div>
+
+            <div class="stat-status">
+              +5 this week
+            </div>
+
+            <div class="stat-chart red-chart">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+          </div>
+
+
+          <!-- Review Due -->
+
+          <div class="dashboard-stat">
+
+            <div class="stat-icon cyan-stat-icon">
+              ▣
+            </div>
+
+            <div class="stat-title">
+              <span>Review Due</span>
+            </div>
+
+            <div class="stat-number">
+              6
+            </div>
+
+            <button class="review-view-button">
+              View all →
+            </button>
+
+          </div>
+
         </div>
 
-        <div class="grid two-grid" style="margin-top:18px">
-          <div class="panel pad">
-            <div class="section-title">Continue Learning</div>
-            <div class="note-list">
-              <div class="note-row">
-                <div class="stripe"></div>
-                <div>
-                  <h3>System Design - Load Balancing</h3>
-                  <p>Horizontal scaling, round robin, consistent hashing...</p>
-                </div><a class="link" data-open-page="detail">Open</a>
-              </div>
-              <div class="note-row">
-                <div class="stripe red"></div>
-                <div>
-                  <h3>CS50 Week 4 - Memory & Pointers</h3>
-                  <p>Stack vs heap, malloc, free, memory leaks...</p>
-                </div><a class="link" data-open-page="detail">Open</a>
-              </div>
-              <div class="note-row">
-                <div class="stripe cyan"></div>
-                <div>
-                  <h3>DBMS Complete Notes</h3>
-                  <p>Normalization, ER diagrams, SQL joins, transactions...</p>
-                </div><a class="link" data-open-page="detail">Open</a>
-              </div>
+
+        <!-- ================= MIDDLE SECTION ================= -->
+
+        <div class="dashboard-middle-grid">
+
+
+          <!-- KNOWLEDGE MAP -->
+
+          <div class="new-dashboard-panel knowledge-map-panel">
+
+            <div class="new-panel-header">
+
+              <h2>
+                <span class="cyan-symbol">⌘</span>
+                Knowledge Map Preview
+              </h2>
+
+              <button>
+                Open Graph ↗
+              </button>
+
             </div>
-          </div>
-          <div class="panel pad">
-            <div class="section-title">Today Review Path</div>
-            <div class="chain">
-              <span>01. Normalization - DBMS</span>
-              <span>02. Process Scheduling - OS</span>
-              <span>03. Memory Pointers - CS50</span>
-              <span>04. Scaling - System Design</span>
+
+
+            <div class="knowledge-map-container">
+
+              <svg viewBox="0 0 650 360" preserveAspectRatio="xMidYMid meet">
+
+                <!-- connections -->
+
+                <g fill="none" stroke="#303248" stroke-width="1.5">
+
+                  <line x1="325" y1="180" x2="160" y2="80" />
+                  <line x1="325" y1="180" x2="490" y2="80" />
+                  <line x1="325" y1="180" x2="165" y2="285" />
+                  <line x1="325" y1="180" x2="485" y2="285" />
+                  <line x1="325" y1="180" x2="325" y2="315" />
+
+                </g>
+
+
+                <!-- strong connections -->
+
+                <g fill="none" stroke="#7c3cff" stroke-width="2.5">
+
+                  <line x1="325" y1="180" x2="160" y2="80" />
+                  <line x1="325" y1="180" x2="165" y2="285" />
+
+                </g>
+
+
+                <!-- center node -->
+
+                <circle cx="325" cy="180" r="48" fill="#7c3cff" />
+
+                <text x="325" y="175" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">
+                  System
+                </text>
+
+                <text x="325" y="193" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">
+                  Design
+                </text>
+
+
+                <!-- databases -->
+
+                <circle cx="325" cy="50" r="29" fill="#11121c" stroke="#16c8e8" stroke-width="2" />
+
+                <text x="325" y="55" text-anchor="middle" fill="#16c8e8" font-size="10" font-weight="800">
+                  Databases
+                </text>
+
+
+                <!-- OS -->
+
+                <circle cx="160" cy="80" r="30" fill="#11121c" stroke="#287cff" stroke-width="2" />
+
+                <text x="160" y="85" text-anchor="middle" fill="#5ca1ff" font-size="12" font-weight="800">
+                  OS
+                </text>
+
+
+                <!-- Networking -->
+
+                <circle cx="490" cy="80" r="31" fill="#11121c" stroke="#9b68ff" stroke-width="2" />
+
+                <text x="490" y="85" text-anchor="middle" fill="#a875ff" font-size="10" font-weight="800">
+                  Networking
+                </text>
+
+
+                <!-- Algorithms -->
+
+                <circle cx="165" cy="285" r="29" fill="#11121c" stroke="#ff4d5e" stroke-width="2" />
+
+                <text x="165" y="290" text-anchor="middle" fill="#ff6674" font-size="9" font-weight="800">
+                  Algorithms
+                </text>
+
+
+                <!-- Scalability -->
+
+                <circle cx="485" cy="285" r="29" fill="#11121c" stroke="#ffb020" stroke-width="2" />
+
+                <text x="485" y="290" text-anchor="middle" fill="#ffb020" font-size="9" font-weight="800">
+                  Scalability
+                </text>
+
+
+                <!-- Memory -->
+
+                <circle cx="325" cy="315" r="27" fill="#11121c" stroke="#00d68f" stroke-width="2" />
+
+                <text x="325" y="320" text-anchor="middle" fill="#00d68f" font-size="10" font-weight="800">
+                  Memory
+                </text>
+
+
+                <!-- note counts -->
+
+                <text x="235" y="115" fill="#7f89a6" font-size="10">
+                  8 notes
+                </text>
+
+                <text x="400" y="115" fill="#7f89a6" font-size="10">
+                  7 notes
+                </text>
+
+                <text x="220" y="245" fill="#7f89a6" font-size="10">
+                  15 notes
+                </text>
+
+                <text x="400" y="245" fill="#7f89a6" font-size="10">
+                  10 notes
+                </text>
+
+                <text x="340" y="265" fill="#7f89a6" font-size="10">
+                  18 notes
+                </text>
+
+              </svg>
+
+
+              <div class="map-legend">
+
+                <span>
+                  <i class="strong-line"></i>
+                  Strong connection
+                </span>
+
+                <span>
+                  <i class="medium-line"></i>
+                  Medium connection
+                </span>
+
+                <span>
+                  <i class="weak-line"></i>
+                  Weak connection
+                </span>
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- KNOWLEDGE HEALTH -->
+
+          <div class="new-dashboard-panel health-dashboard-panel">
+
+            <div class="new-panel-header">
+
+              <h2>
+                Knowledge Health
+              </h2>
+
+            </div>
+
+
+            <div class="health-ring">
+
+              <div>
+
+                <strong>82%</strong>
+
+                <span>Excellent</span>
+
+              </div>
+
+            </div>
+
+
+            <p class="health-message">
+              You're building consistently!<br>
+              Keep going 🚀
+            </p>
+
+
+            <div class="health-bars">
+
+              <div class="health-bar-row">
+
+                <span>▣ Consistency</span>
+
+                <div>
+                  <i class="green-bar"></i>
+                </div>
+
+                <b>90%</b>
+
+              </div>
+
+
+              <div class="health-bar-row">
+
+                <span>⌘ Connections</span>
+
+                <div>
+                  <i class="blue-bar"></i>
+                </div>
+
+                <b>78%</b>
+
+              </div>
+
+
+              <div class="health-bar-row">
+
+                <span>◆ Diversity</span>
+
+                <div>
+                  <i class="purple-bar"></i>
+                </div>
+
+                <b>75%</b>
+
+              </div>
+
+
+              <div class="health-bar-row">
+
+                <span>▣ Review Frequency</span>
+
+                <div>
+                  <i class="orange-bar"></i>
+                </div>
+
+                <b>85%</b>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- AI INSIGHTS -->
+
+          <div class="new-dashboard-panel ai-insights-panel">
+
+            <div class="new-panel-header">
+
+              <h2>
+                <span class="purple-symbol">✦</span>
+                AI Insights
+              </h2>
+
+              <button>
+                View all
+              </button>
+
+            </div>
+
+
+            <div class="ai-insight-list">
+
+
+              <div class="ai-insight">
+
+                <div class="ai-insight-icon green-insight">
+                  ⌘
+                </div>
+
+                <div>
+
+                  <h3>
+                    New connections found
+                  </h3>
+
+                  <p>
+                    System Design now links strongly
+                    with DBMS and OS scheduling.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="ai-insight">
+
+                <div class="ai-insight-icon yellow-insight">
+                  ▣
+                </div>
+
+                <div>
+
+                  <h3>
+                    Review due
+                  </h3>
+
+                  <p>
+                    6 notes are due for review to
+                    strengthen memory.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="ai-insight">
+
+                <div class="ai-insight-icon red-insight">
+                  !
+                </div>
+
+                <div>
+
+                  <h3>
+                    Weak topic detected
+                  </h3>
+
+                  <p>
+                    CAP theorem appears in notes
+                    but lacks detailed content.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="ai-insight">
+
+                <div class="ai-insight-icon purple-insight">
+                  ♨
+                </div>
+
+                <div>
+
+                  <h3>
+                    Study streak
+                  </h3>
+
+                  <p>
+                    You've been consistent for
+                    7 days 🔥
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
+
+
+        <!-- ================= BOTTOM SECTION ================= -->
+
+        <div class="dashboard-bottom-grid">
+
+
+          <!-- CONTINUE LEARNING -->
+
+          <div class="new-dashboard-panel learning-dashboard-panel">
+
+            <div class="new-panel-header">
+
+              <h2>
+                <span class="blue-symbol">▣</span>
+                Continue Learning
+              </h2>
+
+              <button>
+                View all
+              </button>
+
+            </div>
+
+
+            <div class="learning-items">
+
+
+              <div class="learning-item">
+
+                <div class="learning-icon purple-learning">
+                  ◈
+                </div>
+
+                <div>
+
+                  <h3>
+                    System Design - Load Balancing
+                  </h3>
+
+                  <p>
+                    Horizontal scaling, round robin, consistent hashing...
+                  </p>
+
+                </div>
+
+                <a class="link" data-open-page="detail">
+                  Open →
+                </a>
+
+              </div>
+
+
+              <div class="learning-item">
+
+                <div class="learning-icon red-learning">
+                  ◈
+                </div>
+
+                <div>
+
+                  <h3>
+                    CS50 Week 4 - Memory & Pointers
+                  </h3>
+
+                  <p>
+                    Stack vs heap, malloc, free, memory leaks...
+                  </p>
+
+                </div>
+
+                <a class="link" data-open-page="detail">
+                  Open →
+                </a>
+
+              </div>
+
+
+              <div class="learning-item">
+
+                <div class="learning-icon cyan-learning">
+                  ▤
+                </div>
+
+                <div>
+
+                  <h3>
+                    DBMS Complete Notes
+                  </h3>
+
+                  <p>
+                    Normalization, Indexing, Transactions...
+                  </p>
+
+                </div>
+
+                <a class="link" data-open-page="detail">
+                  Open →
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- TODAY'S REVIEW PATH -->
+
+          <div class="new-dashboard-panel review-dashboard-panel">
+
+            <div class="new-panel-header">
+
+              <h2>
+                <span class="purple-symbol">◎</span>
+                Today's Review Path
+              </h2>
+
+              <button>
+                View full path
+              </button>
+
+            </div>
+
+
+            <div class="review-path">
+
+
+              <div class="review-card">
+
+                <div class="review-number purple-review">
+                  1
+                </div>
+
+                <h3>
+                  Normalization
+                </h3>
+
+                <span>
+                  (DBMS)
+                </span>
+
+                <small>
+                  15 min
+                </small>
+
+              </div>
+
+
+              <div class="review-arrow">
+                →
+              </div>
+
+
+              <div class="review-card">
+
+                <div class="review-number blue-review">
+                  2
+                </div>
+
+                <h3>
+                  Process Scheduling
+                </h3>
+
+                <span>
+                  (OS)
+                </span>
+
+                <small>
+                  20 min
+                </small>
+
+              </div>
+
+
+              <div class="review-arrow">
+                →
+              </div>
+
+
+              <div class="review-card">
+
+                <div class="review-number green-review">
+                  3
+                </div>
+
+                <h3>
+                  Memory Pointers
+                </h3>
+
+                <span>
+                  (CS50)
+                </span>
+
+                <small>
+                  25 min
+                </small>
+
+              </div>
+
+
+              <div class="review-arrow">
+                →
+              </div>
+
+
+              <div class="review-card">
+
+                <div class="review-number orange-review">
+                  4
+                </div>
+
+                <h3>
+                  Scaling
+                </h3>
+
+                <span>
+                  (System Design)
+                </span>
+
+                <small>
+                  15 min
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <div class="review-progress">
+
+              <div>
+                <span></span>
+              </div>
+
+              <p>
+                <span>2 of 4 completed</span>
+                <span>Total: 75 min</span>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
       <section class="page" id="notes">
