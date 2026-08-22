@@ -1,0 +1,43 @@
+﻿const homeScreen = document.getElementById("home-screen");
+    const signinScreen = document.getElementById("signin-screen");
+    const appScreen = document.getElementById("app-screen");
+    const buttons = document.querySelectorAll(".nav button");
+    const pages = document.querySelectorAll(".page");
+
+    function showScreen(screen) {
+      homeScreen.classList.toggle("hidden", screen !== "home");
+      signinScreen.classList.toggle("hidden", screen !== "signin");
+      appScreen.classList.toggle("hidden", screen !== "app");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function openPage(pageId) {
+        showScreen("app");
+        buttons.forEach((item) => item.classList.remove("active"));
+        const navButton = document.querySelector(`.nav button[data-page="${pageId}"]`);
+        if (navButton) navButton.classList.add("active");
+        pages.forEach((page) => page.classList.remove("active"));
+        document.getElementById(pageId).classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => openPage(button.dataset.page));
+    });
+
+    document.querySelectorAll("[data-open-page]").forEach((trigger) => {
+      trigger.addEventListener("click", () => openPage(trigger.dataset.openPage));
+    });
+
+    document.querySelectorAll("[data-show-signin]").forEach((trigger) => {
+      trigger.addEventListener("click", () => showScreen("signin"));
+    });
+
+    document.querySelectorAll("[data-show-home]").forEach((trigger) => {
+      trigger.addEventListener("click", () => showScreen("home"));
+    });
+
+    document.getElementById("signin-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      openPage("dashboard");
+    });

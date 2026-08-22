@@ -1,0 +1,777 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NoteFy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section class="public-screen" id="home-screen">
+    <header class="public-nav">
+      <div class="public-brand">
+        <div class="logo">NF</div>
+        <span class="brand-name">NoteFy</span>
+      </div>
+      <nav class="public-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/vatsalya_006/notefy" target="_blank">GitHub</a>
+      </nav>
+      <div class="public-actions">
+        <button class="text-button" data-show-signin>Log in</button>
+        <button class="primary" data-show-signin>Get Started</button>
+      </div>
+    </header>
+
+    <main class="landing-hero">
+      <div class="brain-row" aria-hidden="true">
+
+        <div class="brain-node">
+          <div class="brain-face">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 3h8l4 4v14H6z"></path>
+              <path d="M14 3v5h5"></path>
+              <path d="M9 13h6"></path>
+              <path d="M9 17h6"></path>
+            </svg>
+          </div>
+          <span>Documents</span>
+        </div>
+
+        <div class="brain-node">
+          <div class="brain-face">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="3"></rect>
+              <path d="m10 9 5 3-5 3z"></path>
+            </svg>
+          </div>
+          <span>Videos</span>
+        </div>
+
+        <div class="brain-node">
+          <div class="brain-face">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="7" width="16" height="13" rx="4"></rect>
+              <path d="M8 7V4"></path>
+              <path d="M16 7V4"></path>
+              <path d="M4 11h16"></path>
+              <circle cx="9" cy="15" r="1"></circle>
+              <circle cx="15" cy="15" r="1"></circle>
+            </svg>
+          </div>
+          <span>AI</span>
+        </div>
+
+        <div class="brain-node">
+          <div class="brain-face">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 5.5a3 3 0 0 0-5 2.2A3.5 3.5 0 0 0 5 14a3 3 0 0 0 4 4.5A3.5 3.5 0 0 0 12 21"></path>
+              <path d="M15 5.5a3 3 0 0 1 5 2.2A3.5 3.5 0 0 1 19 14a3 3 0 0 1-4 4.5A3.5 3.5 0 0 1 12 21"></path>
+              <path d="M12 4v17"></path>
+              <path d="M8 9h4"></path>
+              <path d="M12 14h4"></path>
+            </svg>
+          </div>
+          <span>Knowledge</span>
+        </div>
+
+        <div class="brain-node">
+          <div class="brain-face">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5"></circle>
+              <path d="m16 16 5 5"></path>
+            </svg>
+          </div>
+          <span>Search</span>
+        </div>
+
+      </div>
+      <h1>Where notes and AI <span class="highlight-pill">connect</span></h1>
+      <p>
+        Store notes, PDFs, and YouTube lectures in one intelligent workspace.<br>
+        Turn scattered information into AI-powered summaries,
+        semantic search, and contextual conversations.
+      </p>
+      <div class="hero-actions">
+        <button class="primary" data-show-signin>Get Started</button>
+        <button class="ghost">View demo</button>
+      </div>
+
+      <div class="hero-preview">
+        <div class="preview-bar">
+          <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+          <span class="preview-bar-title">SecondBrain / Knowledge workspace</span>
+        </div>
+        <div class="preview-grid">
+          <aside class="preview-side">
+            <div class="section-title">Today</div>
+            <div class="preview-card">
+              <h3>Review due</h3>
+              <p>Normalization, scheduling, and memory pointers.</p>
+            </div>
+            <div class="preview-card">
+              <h3>New links</h3>
+              <p>18 fresh connections found across your notes.</p>
+            </div>
+          </aside>
+          <section class="preview-doc">
+            <span class="badge">Note</span>
+            <h2 class="preview-title">System Design - Load Balancing</h2>
+            <p class="preview-description">Horizontal scaling distributes traffic across multiple servers. Related
+              ideas: DBMS sharding, OS scheduling, TCP/IP routing.</p>
+            <div class="tags"><span class="tag">engineering</span><span class="tag">backend</span><span
+                class="tag">distributed systems</span></div>
+            <div class="bar"><span style="width:88%"></span></div>
+            <div class="preview-stats">
+              <div class="stat-box">
+                <span class="stat-number">152</span>
+                <span class="stat-label">Knowledge Links</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">24</span>
+                <span class="stat-label">AI Summaries</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Context Match</span>
+              </div>
+            </div>
+          </section>
+          <aside class="preview-context">
+            <div class="section-title">AI Context</div>
+            <div class="chain">
+              <div class="chain-item">
+                <span class="chain-dot"></span>
+                DBMS Notes
+              </div>
+              <div class="chain-item">
+                <span class="chain-dot"></span>
+                OS Scheduling
+              </div>
+              <div class="chain-item">
+                <span class="chain-dot"></span>
+                TCP/IP Stack
+              </div>
+            </div>
+            <button class="primary" style="width:100%;margin-top:24px" data-show-signin>Open dashboard</button>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <section class="landing-band">
+      <div class="landing-band-inner">
+
+        <div class="features-heading">
+          <span class="features-label">FEATURES</span>
+          <h2>Everything in one place<span class="heading-dot">.</span></h2>
+        </div>
+
+        <div class="feature-grid">
+
+          <!-- Semantic Search -->
+          <article class="feature feature-purple">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.5"></circle>
+                <path d="m16 16 5 5"></path>
+              </svg>
+            </div>
+
+            <span class="badge">Semantic Search</span>
+
+            <h3>Find ideas, not exact words.</h3>
+
+            <p>
+              Ask by meaning and get matched notes, PDFs, and video
+              summaries with relevance scores.
+            </p>
+          </article>
+
+
+          <!-- Knowledge Graph -->
+          <article class="feature feature-cyan">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"></circle>
+                <circle cx="5" cy="7" r="2"></circle>
+                <circle cx="19" cy="7" r="2"></circle>
+                <circle cx="6" cy="18" r="2"></circle>
+                <circle cx="18" cy="18" r="2"></circle>
+
+                <path d="M9.5 10.5 6.5 8.5"></path>
+                <path d="M14.5 10.5 17.5 8.5"></path>
+                <path d="M9.5 14 7.5 17"></path>
+                <path d="M14.5 14 16.5 17"></path>
+              </svg>
+            </div>
+
+            <span class="badge cyan">Knowledge Graph</span>
+
+            <h3>See how topics connect.</h3>
+
+            <p>
+              Every upload becomes a connected map of concepts, sources,
+              and related study paths.
+            </p>
+          </article>
+
+
+          <!-- AI Chat -->
+          <article class="feature feature-green">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 6.5h14a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H11l-4 3v-3.5A3 3 0 0 1 4 15V9.5a3 3 0 0 1 1-3z"></path>
+                <path d="M9 12h.01"></path>
+                <path d="M12 12h.01"></path>
+                <path d="M15 12h.01"></path>
+                <path d="m18 5 .6 1.4L20 7l-1.4.6L18 9l-.6-1.4L16 7l1.4-.6z"></path>
+              </svg>
+            </div>
+
+            <span class="badge green">AI Chat</span>
+
+            <h3>Answers from your notes only.</h3>
+
+            <p>
+              Chat with your saved content and see source chips for every
+              useful answer.
+            </p>
+          </article>
+
+
+          <!-- PDF Upload -->
+          <article class="feature feature-purple">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 3h8l4 4v14H6z"></path>
+                <path d="M14 3v5h5"></path>
+                <path d="M9 13h6"></path>
+                <path d="M9 17h4"></path>
+              </svg>
+            </div>
+
+            <span class="badge">PDF Upload</span>
+
+            <h3>Upload and understand PDFs.</h3>
+
+            <p>
+              Upload PDFs and get instant AI summaries, key points,
+              and semantic search across the content.
+            </p>
+          </article>
+
+
+          <!-- YouTube Learning -->
+          <article class="feature feature-pink">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="6" width="18" height="13" rx="3"></rect>
+                <path d="m10 10 5 2.5-5 2.5z"></path>
+              </svg>
+            </div>
+
+            <span class="badge pink">YouTube Learning</span>
+
+            <h3>Learn from any video.</h3>
+
+            <p>
+              Paste any YouTube link and get transcripts, summaries,
+              timestamps, and smart takeaways.
+            </p>
+          </article>
+
+
+          <!-- Smart Notes -->
+          <article class="feature feature-yellow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+                <path d="M8 8h8"></path>
+                <path d="M8 12h5"></path>
+                <path d="M8 16h3"></path>
+                <path d="m16 14 3 3"></path>
+                <path d="m15 17 1-3 2 2z"></path>
+              </svg>
+            </div>
+
+            <span class="badge yellow">Smart Notes</span>
+
+            <h3>Write. Organize. Connect.</h3>
+
+            <p>
+              Create smart notes, link ideas, and let AI suggest connections
+              across your entire knowledge base.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="signin-screen hidden" id="signin-screen">
+    <div class="signin-card">
+      <div class="public-brand">
+        <div class="logo">SB</div>
+        <span>SecondBrain</span>
+      </div>
+      <h1>Sign in to your second brain</h1>
+      <p>Use the demo credentials or continue with your account. This prototype opens the dashboard after sign in.</p>
+      <form class="form" id="signin-form">
+        <label class="field">Email<input type="email" value="rahul@example.com" /></label>
+        <label class="field">Password<input type="password" value="secondbrain" /></label>
+        <button class="primary" type="submit" style="height:48px">Sign in</button>
+      </form>
+      <div class="signin-footer">
+        <button class="text-button" data-show-home>Back home</button>
+        <span>No account needed for demo</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="app hidden" id="app-screen">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">NF</div>
+        <div>
+          <strong>NoteFy</strong>
+          <span>Knowledge Graph</span>
+        </div>
+      </div>
+      <div class="activity"><b>134</b> connections active</div>
+
+      <div class="nav-label">Workspace</div>
+      <nav class="nav">
+        <button class="active" data-page="dashboard"><span class="ico">|</span>Dashboard</button>
+        <button data-page="notes"><span class="ico">|</span>Notes</button>
+        <button data-page="upload"><span class="ico">|</span>Upload</button>
+      </nav>
+
+      <div class="nav-label">Intelligence</div>
+      <nav class="nav">
+        <button data-page="search"><span class="ico">|</span>AI Search</button>
+        <button data-page="graph"><span class="ico">|</span>Graph</button>
+        <button data-page="chat"><span class="ico">|</span>AI Chat</button>
+      </nav>
+
+      <div class="profile">
+        <div class="avatar">R</div>
+        <div><strong>Rahul</strong><span>Free plan</span></div>
+        <div class="gear">|</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="page active" id="dashboard">
+        <div class="page-head">
+          <div>
+            <h1>Good morning, Rahul</h1>
+            <p class="sub">Your second brain gained 18 connections this week.</p>
+          </div>
+          <button class="primary">+ New Note</button>
+        </div>
+
+        <div class="grid dash-grid">
+          <div class="grid">
+            <div class="health-hero">
+              <strong>82%</strong>
+              <span>Knowledge health</span>
+              <div class="bar"><span style="width:82%"></span></div>
+            </div>
+            <div class="metric-grid">
+              <div class="metric"><b>47</b><span>Total notes</span></div>
+              <div class="metric"><b>12</b><span>PDFs saved</span></div>
+              <div class="metric"><b>18</b><span>YouTube links</span></div>
+              <div class="metric"><b>6</b><span>Review due</span></div>
+            </div>
+          </div>
+
+          <div class="panel pad mini-graph">
+            <div class="section-title">Knowledge Map Preview</div>
+            <svg viewBox="0 0 520 320" aria-label="Knowledge map preview">
+              <g stroke="#26263a" stroke-width="1.5">
+                <line x1="260" y1="150" x2="150" y2="82" />
+                <line x1="260" y1="150" x2="380" y2="80" />
+                <line x1="260" y1="150" x2="172" y2="238" />
+                <line x1="260" y1="150" x2="342" y2="252" />
+                <line x1="380" y1="80" x2="430" y2="188" />
+              </g>
+              <g font-size="13" font-weight="800" text-anchor="middle">
+                <circle cx="260" cy="150" r="42" fill="#7c3cff" opacity=".9" />
+                <text x="260" y="155" fill="#fff">System</text>
+                <circle cx="150" cy="82" r="28" fill="#12121d" stroke="#7c3cff" stroke-width="2" />
+                <text x="150" y="87" fill="#9b68ff">OS</text>
+                <circle cx="380" cy="80" r="31" fill="#12121d" stroke="#16c8e8" stroke-width="2" />
+                <text x="380" y="85" fill="#16c8e8">DBMS</text>
+                <circle cx="172" cy="238" r="25" fill="#12121d" stroke="#7c3cff" stroke-width="2" />
+                <text x="172" y="243" fill="#9b68ff">Load</text>
+                <circle cx="342" cy="252" r="23" fill="#12121d" stroke="#16c8e8" stroke-width="2" />
+                <text x="342" y="257" fill="#16c8e8">TCP</text>
+                <circle cx="430" cy="188" r="22" fill="#12121d" stroke="#ff4d5e" stroke-width="2" />
+                <text x="430" y="193" fill="#ff4d5e">CS50</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="panel pad">
+            <div class="section-title">AI Insights</div>
+            <div class="insight">
+              <div class="insight-item">
+                <h3>New connections found</h3>
+                <p>System Design now links strongly with DBMS notes and OS scheduling.</p>
+              </div>
+              <div class="insight-item">
+                <h3>Review due</h3>
+                <p>Normalization, process scheduling, and memory pointers need attention.</p>
+              </div>
+              <div class="insight-item">
+                <h3>Weak topic</h3>
+                <p>CAP theorem appears in notes but has no summary yet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid two-grid" style="margin-top:18px">
+          <div class="panel pad">
+            <div class="section-title">Continue Learning</div>
+            <div class="note-list">
+              <div class="note-row">
+                <div class="stripe"></div>
+                <div>
+                  <h3>System Design - Load Balancing</h3>
+                  <p>Horizontal scaling, round robin, consistent hashing...</p>
+                </div><a class="link" data-open-page="detail">Open</a>
+              </div>
+              <div class="note-row">
+                <div class="stripe red"></div>
+                <div>
+                  <h3>CS50 Week 4 - Memory & Pointers</h3>
+                  <p>Stack vs heap, malloc, free, memory leaks...</p>
+                </div><a class="link" data-open-page="detail">Open</a>
+              </div>
+              <div class="note-row">
+                <div class="stripe cyan"></div>
+                <div>
+                  <h3>DBMS Complete Notes</h3>
+                  <p>Normalization, ER diagrams, SQL joins, transactions...</p>
+                </div><a class="link" data-open-page="detail">Open</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel pad">
+            <div class="section-title">Today Review Path</div>
+            <div class="chain">
+              <span>01. Normalization - DBMS</span>
+              <span>02. Process Scheduling - OS</span>
+              <span>03. Memory Pointers - CS50</span>
+              <span>04. Scaling - System Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="notes">
+        <div class="page-head">
+          <div>
+            <h1>All Notes <span style="color:var(--muted);font-size:14px;font-weight:500">47 knowledge items</span></h1>
+          </div>
+          <button class="primary">+ New Note</button>
+        </div>
+        <div class="toolbar">
+          <input class="search" placeholder="Search notes, tags, or connected concepts..." />
+          <button class="ghost active">All</button><button class="ghost">Notes</button><button
+            class="ghost">PDFs</button><button class="ghost">YouTube</button><button class="ghost">Sort</button>
+        </div>
+        <div class="grid three-grid">
+          <article class="card"><span class="badge">Note</span>
+            <h3>System Design - Load Balancing</h3>
+            <div class="tags"><span class="tag">engineering</span><span class="tag">backend</span><span
+                class="tag">system-design</span></div>
+            <div class="card-foot"><span>8 connections</span><a class="link" data-open-page="detail">Open -></a></div>
+          </article>
+          <article class="card video"><span class="badge red">YouTube</span>
+            <h3>CS50 Week 4 - Pointers & Memory</h3>
+            <div class="tags"><span class="tag">cs</span><span class="tag">c-lang</span></div>
+            <div class="card-foot"><span>5 connections</span><a class="link" data-open-page="detail">Open -></a></div>
+          </article>
+          <article class="card pdf"><span class="badge cyan">PDF</span>
+            <h3>DBMS Complete Notes VTU 5th Sem</h3>
+            <div class="tags"><span class="tag">dbms</span><span class="tag">sql</span></div>
+            <div class="card-foot"><span>12 connections</span><a class="link" data-open-page="detail">Open -></a></div>
+          </article>
+          <article class="card"><span class="badge">Note</span>
+            <h3>OS Process Scheduling Algorithms</h3>
+            <div class="tags"><span class="tag">os</span><span class="tag">algorithms</span></div>
+            <div class="card-foot"><span>6 connections</span><a class="link" data-open-page="detail">Open -></a></div>
+          </article>
+          <article class="card pdf"><span class="badge cyan">PDF</span>
+            <h3>Computer Networks - TCP/IP Model</h3>
+            <div class="tags"><span class="tag">networking</span></div>
+            <div class="card-foot"><span>9 connections</span><a class="link" data-open-page="detail">Open -></a></div>
+          </article>
+          <article class="card video"><span class="badge red">YouTube</span>
+            <h3>React Hooks Deep Dive - useCallback</h3>
+            <div class="tags"><span class="tag">react</span><span class="tag">frontend</span></div>
+            <div class="card-foot"><span>4 connections</span><a class="link" data-open-page="detail">Open -></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="detail">
+        <div class="detail-layout">
+          <article class="article">
+            <div class="crumbs">Notes / System Design / Load Balancing</div>
+            <div class="editor-tools">
+              <b>B</b><span>I</span><span>U</span><span>|</span><span>H1</span><span>H2</span><span>â€¢</span><span>Link</span><span>AI</span>
+            </div>
+            <h1>System Design - Load Balancing</h1>
+            <div class="tags"><span class="tag">engineering</span><span class="tag">backend</span><span
+                class="tag">system-design</span><span class="tag">+ Add tag</span></div>
+            <h2>What is Load Balancing?</h2>
+            <p>Load balancing distributes network traffic across multiple servers. This prevents a single server from
+              becoming overloaded and improves application responsiveness.</p>
+            <h2>Types of Load Balancing Algorithms</h2>
+            <ul>
+              <li>Round Robin distributes requests sequentially across servers.</li>
+              <li>Least Connections routes traffic to the least busy server.</li>
+              <li>IP Hash uses the client IP to choose the destination server.</li>
+              <li>Weighted Round Robin assigns capacity-based weights.</li>
+            </ul>
+            <h2>Horizontal vs Vertical Scaling</h2>
+            <p>Horizontal scaling adds more machines to your server pool. Vertical scaling adds more power to existing
+              machines. Load balancers make horizontal scaling practical.</p>
+          </article>
+          <aside class="panel pad">
+            <div class="side-section">
+              <div class="section-title">AI Context</div>
+              <h3>Auto Summary</h3>
+              <p>Load balancing improves reliability by distributing traffic across multiple servers using routing
+                algorithms.</p>
+            </div>
+            <div class="side-section">
+              <h3>Related Concepts</h3>
+              <div class="chain"><span>| DBMS Distributed Systems</span><span>â”œ OS Process
+                  Scheduling</span><span>| TCP/IP Stack</span></div>
+            </div>
+            <div class="side-section">
+              <h3>Questions to Ask</h3>
+              <p>How does consistent hashing help distributed caches?</p>
+            </div>
+            <div class="side-section">
+              <h3>Version History</h3>
+              <p>2h ago - Auto saved<br>Yesterday - Manual save<br>3 days ago - Created</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="upload">
+        <div class="page-head">
+          <div>
+            <h1>Upload Content</h1>
+            <p class="sub">Drop PDFs or import YouTube links. AI will build summaries, tags, and graph connections.</p>
+          </div>
+        </div>
+        <div class="grid two-grid">
+          <div class="panel pad">
+            <h2>Upload PDF</h2>
+            <div class="upload-box">
+              <div>
+                <div style="font-size:34px;color:var(--cyan)">|</div><strong>Drop PDF here</strong><span>or click to
+                  browse - max 50MB</span>
+              </div>
+            </div>
+            <div class="steps">
+              <div class="step"><span class="dot"></span>Extract full text</div>
+              <div class="step"><span class="dot"></span>Generate summary</div>
+              <div class="step"><span class="dot"></span>Auto-tag topics</div>
+              <div class="step"><span class="dot"></span>Create graph connections</div>
+            </div>
+          </div>
+          <div class="panel pad">
+            <h2>YouTube Import</h2>
+            <input class="search" style="width:100%;margin-top:16px" value="https://youtube.com/watch?v=..." />
+            <div class="video-preview">
+              <div class="play">|</div>
+            </div>
+            <div class="steps">
+              <div class="step"><span class="dot" style="background:var(--red)"></span>Fetch transcript</div>
+              <div class="step"><span class="dot" style="background:var(--red)"></span>Extract key timestamps</div>
+              <div class="step"><span class="dot" style="background:var(--red)"></span>Connect to saved notes</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:22px" class="panel pad">
+          <div class="section-title">Processing Queue</div>
+          <div class="queue">
+            <div class="queue-row">
+              <div>
+                <h3>DBMS_Complete_Notes.pdf</h3>
+                <p class="sub">Extracted text -> summary generated -> 12 topics found -> added to graph</p>
+              </div><span class="badge green">Done</span>
+            </div>
+            <div class="queue-row">
+              <div>
+                <h3>CS50 Week 4 - Memory</h3>
+                <p class="sub">Transcript fetched -> timestamps found -> summarizing</p>
+              </div><span class="badge">Processing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="search">
+        <div class="page-head">
+          <div>
+            <h1>AI Semantic Search</h1>
+            <p class="sub">Search by meaning, not just keywords.</p>
+          </div>
+        </div>
+        <div class="semantic-hero"><input class="search" value="how do databases handle scaling and distribution?" />
+        </div>
+        <div class="toolbar"><button class="ghost active">All</button><button class="ghost">Notes only</button><button
+            class="ghost">PDFs only</button><button class="ghost">YouTube only</button><button class="ghost">Weak
+            topics</button></div>
+        <div class="grid">
+          <div class="result">
+            <div class="result-head">
+              <h2><span class="badge">Note</span> System Design - Load Balancing</h2><span class="badge green">96%
+                match</span>
+            </div>
+            <p>Matched ideas: horizontal scaling, distributed traffic, cache invalidation, and server pools.</p>
+            <div class="bar"><span style="width:96%"></span></div><a class="link" data-open-page="detail">Open note
+              -></a> <a class="link" style="margin-left:16px" data-open-page="chat">Ask AI about this</a>
+          </div>
+          <div class="result">
+            <div class="result-head">
+              <h2><span class="badge cyan">PDF</span> DBMS Complete Notes - Distributed DB</h2><span
+                class="badge green">89% match</span>
+            </div>
+            <p>Matched ideas: CAP theorem, eventual consistency, sharding, and replication models.</p>
+            <div class="bar"><span style="width:89%"></span></div><a class="link" data-open-page="detail">Open note
+              -></a> <a class="link" style="margin-left:16px" data-open-page="chat">Ask AI about this</a>
+          </div>
+          <div class="result">
+            <div class="result-head">
+              <h2><span class="badge red">YouTube</span> CS50 Week 5 - Data Structures</h2><span class="badge green">82%
+                match</span>
+            </div>
+            <p>Matched ideas: hash tables, lookup speed, memory layout, and data access tradeoffs.</p>
+            <div class="bar"><span style="width:82%"></span></div><a class="link" data-open-page="detail">Open note
+              -></a> <a class="link" style="margin-left:16px" data-open-page="chat">Ask AI about this</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="chat">
+        <div class="chat-layout">
+          <div class="chat-main">
+            <div class="chat-top">
+              <div>
+                <h2>AI Chat</h2>
+                <p class="sub">Answers only from your saved notes</p>
+              </div><span class="badge green">47 notes indexed</span>
+            </div>
+            <div class="messages">
+              <div class="bubble user">Explain the difference between horizontal and vertical scaling from my notes
+              </div>
+              <div class="bubble ai">Based on your System Design notes, vertical scaling means adding more power to an
+                existing server. Horizontal scaling means adding more servers to distribute load. Your DBMS notes
+                connect this idea to distributed databases and sharding.<div class="sources"><span class="tag">System
+                    Design - Load Balancing</span><span class="tag">DBMS - Distributed DB</span></div>
+              </div>
+            </div>
+            <div class="composer">
+              <div class="mode-row"><button class="ghost active">Ask</button><button
+                  class="ghost">Summarize</button><button class="ghost">Compare</button><button class="ghost">Quiz
+                  me</button></div>
+              <div class="input-row"><input placeholder="Ask anything about your notes..." /><button
+                  class="primary">Send</button></div>
+            </div>
+          </div>
+          <aside class="chat-side">
+            <div class="section-title">Try Asking</div>
+            <div class="prompt">Summarize my DBMS notes</div>
+            <div class="prompt">What is CAP theorem?</div>
+            <div class="prompt">Compare OS scheduling algorithms</div>
+            <div class="prompt">Explain TCP vs UDP</div>
+            <div class="section-title" style="margin-top:24px">Used Sources</div>
+            <div class="chain"><span>System Design</span><span>DBMS Notes</span><span>OS Scheduling</span></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="graph">
+        <div class="graph-page">
+          <div class="graph-work">
+            <div class="graph-toolbar">
+              <input class="search" placeholder="Search nodes..." />
+              <div><button class="ghost active">All</button><button class="ghost">Notes</button><button
+                  class="ghost">PDFs</button><button class="ghost">YouTube</button><button class="ghost">Find
+                  Path</button></div>
+            </div>
+            <div class="graph-canvas">
+              <svg viewBox="0 0 820 650" aria-label="Knowledge graph">
+                <g stroke="#202033" stroke-width="1.4">
+                  <line x1="390" y1="320" x2="300" y2="175" />
+                  <line x1="390" y1="320" x2="560" y2="215" />
+                  <line x1="390" y1="320" x2="260" y2="455" />
+                  <line x1="390" y1="320" x2="455" y2="520" />
+                  <line x1="560" y1="215" x2="625" y2="420" />
+                  <line x1="300" y1="175" x2="185" y2="300" />
+                  <line x1="185" y1="300" x2="220" y2="460" />
+                </g>
+                <g stroke="#7c3cff" stroke-width="2.5">
+                  <line x1="390" y1="320" x2="300" y2="175" />
+                  <line x1="390" y1="320" x2="260" y2="455" />
+                </g>
+                <g font-size="13" font-weight="800" text-anchor="middle">
+                  <circle cx="390" cy="320" r="44" fill="#7c3cff" /><text x="390" y="325" fill="#fff">System</text>
+                  <circle cx="300" cy="175" r="28" fill="#11111a" stroke="#7c3cff" stroke-width="2" /><text x="300"
+                    y="180" fill="#9b68ff">OS</text>
+                  <circle cx="560" cy="215" r="34" fill="#11111a" stroke="#16c8e8" stroke-width="2" /><text x="560"
+                    y="220" fill="#16c8e8">DBMS</text>
+                  <circle cx="260" cy="455" r="27" fill="#11111a" stroke="#7c3cff" stroke-width="2" /><text x="260"
+                    y="460" fill="#9b68ff">Load</text>
+                  <circle cx="455" cy="520" r="23" fill="#11111a" stroke="#16c8e8" stroke-width="2" /><text x="455"
+                    y="525" fill="#16c8e8">TCP</text>
+                  <circle cx="625" cy="420" r="24" fill="#11111a" stroke="#ff4d5e" stroke-width="2" /><text x="625"
+                    y="425" fill="#ff4d5e">CS50</text>
+                  <circle cx="185" cy="300" r="24" fill="#11111a" stroke="#7c3cff" stroke-width="2" /><text x="185"
+                    y="305" fill="#9b68ff">Algo</text>
+                </g>
+              </svg>
+            </div>
+            <div class="graph-legend"><span><span class="dot"
+                  style="display:inline-block;background:var(--purple);box-shadow:none"></span> Note</span><span><span
+                  class="dot" style="display:inline-block;background:var(--cyan);box-shadow:none"></span>
+                PDF</span><span><span class="dot"
+                  style="display:inline-block;background:var(--red);box-shadow:none"></span> YouTube</span><span>47
+                nodes</span><span>134 connections</span></div>
+          </div>
+          <aside class="inspector">
+            <div class="section-title">Selected Node</div>
+            <div class="node-icon">|</div>
+            <h2>System Design</h2>
+            <div class="tags"><span class="tag">note</span></div>
+            <div class="side-section">
+              <h3>Connected to</h3>
+              <div class="chain"><span>| Load Balancing</span><span>| DBMS Notes</span><span>| OS
+                  Scheduling</span><span>| Networking</span></div>
+            </div>
+            <button class="primary" style="width:100%" data-open-page="detail">Open Note -></button>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
